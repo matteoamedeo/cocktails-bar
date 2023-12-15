@@ -1,0 +1,24 @@
+@import './variables.scss';
+
+$primary: violet;
+$body-bg: #010609;
+$white: $white-c;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.btn{
+    font-size: $text-medium ;
+    color: $white-c ;
+
+}
+.btn-primary{
+    min-width: 150px
+}
+
+.invalid-feedback{
+    font-size: $text-small
+}
+
+@import './typography.scss';
+@import './skin.scss';
+

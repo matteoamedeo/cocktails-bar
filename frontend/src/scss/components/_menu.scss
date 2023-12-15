@@ -1,0 +1,42 @@
+.menuLinks-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 4.5vw;
+  transform: translateY(-50%);
+  z-index: 1;
+
+  li {
+    left: -30px;
+    opacity: 0;
+
+    &:nth-child(1) {
+      left: -30px;
+    }
+    &:nth-child(2) {
+      left: -60px;
+    }
+    &:nth-child(3) {
+      left: -90px;
+    }
+
+    &.showLink {
+      opacity: 1;
+      left: 0;
+      transition: 1s ease;
+    }
+  }
+}
+
+.menuLinks-wrapper-horizontal {
+    padding: 1rem;
+
+    ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+        li {
+          background-color: transparent !important;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+.border-bottom-divider {
+    border-bottom: 1px solid $white-c;
+}
+
+input {
+    font-size: $text-medium !important;
+
+    border: 1px solid violet !important;
+    padding: 1rem !important;
+    color: $white-c !important;
+
+    &::placeholder {
+        color: $mute !important;
+    }
+}
+
+a{
+    text-decoration: none;
+}

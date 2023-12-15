@@ -1,0 +1,33 @@
+@import "../variables.scss";
+
+nav {
+    height: $header-height;
+    @include media-breakpoint-down(sm) {
+        height: $header-height-mobile;
+
+    }
+
+
+    .navbar-brand {
+        position: relative;
+
+        .logo {
+            filter: invert(1);
+        }
+
+        .logoText {
+            position: absolute;
+            font-size: $text-medium;
+            bottom: 10%;
+        }
+    }
+
+    .pull-right {
+        position: absolute;
+        font-size: $text-medium;
+
+        @include media-breakpoint-down(sm) {
+            position: relative;
+        }
+    }
+}

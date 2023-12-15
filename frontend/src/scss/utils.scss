@@ -1,0 +1,31 @@
+@import 'variables.scss';
+
+.space-divider-mobile{
+    margin-top: 8rem;
+
+    @include media-breakpoint-up(md){
+        margin-top: 4rem;
+    }
+}
+
+.text-large{
+    font-size: $text-large;
+}
+.text-medium{
+    font-size: $text-medium;
+}
+.text-small{
+    font-size: $text-small;
+}
+
+.redirectSpinner{
+    position: absolute;
+    width: calc(100vw - (100vw - 100%));
+    height: 100vh;
+    z-index: 1;
+    opacity: .7;
+    background-color: black;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
